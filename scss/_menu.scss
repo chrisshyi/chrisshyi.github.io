@@ -15,7 +15,7 @@
         width: 28px;
         height: 3px;
         margin: 0 0 5px 0;
-        background: #fff;
+        background: config.set-text-color(config.$primary-color);
 
         @include config.easeOut;
     }
@@ -119,7 +119,7 @@
         text-transform: uppercase;
         padding: 1rem 0;
         font-weight: 300;
-        color: white;
+        color: config.set-text-color(config.$primary-color);
         text-decoration: none;
         @include config.easeOut;
 
