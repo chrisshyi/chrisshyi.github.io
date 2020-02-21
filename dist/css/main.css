@@ -4,14 +4,14 @@
   top: 35px;
   right: 35px;
   cursor: pointer;
-  transition: all 0.8s ease-out;
+  transition: all 0.5s ease-out;
 }
 .menu-btn .btn-line {
   width: 28px;
   height: 3px;
   margin: 0 0 5px 0;
   background: #fff;
-  transition: all 0.8s ease-out;
+  transition: all 0.5s ease-out;
 }
 .menu-btn.close {
   transform: rotate(180deg);
@@ -54,7 +54,7 @@
   background: #414141;
   list-style: none;
   transform: translate(0, -100%);
-  transition: all 0.8s ease-out;
+  transition: all 0.5s ease-out;
 }
 .menu-nav.show {
   transform: translate(0, 0);
@@ -62,21 +62,29 @@
 .menu-branding {
   background: #444;
   transform: translate(0, 100%);
-  transition: all 0.8s ease-out;
+  transition: all 0.5s ease-out;
 }
 .menu-branding.show {
   transform: translate(0, 0);
 }
 .menu-branding .portrait {
+  /*
   width: 250px;
   height: 250px;
-  background: url("../img/portrait.jpg");
+  background: url('../img/chris_250x2502.jpg');
+  border-radius: 50%;
+  border: solid 3px config.$secondary-color;
+  */
+}
+.menu-branding .portrait img {
+  width: 350px;
+  height: auto;
   border-radius: 50%;
   border: solid 3px #eece1a;
 }
 .menu .nav-item {
   transform: translate(600px, 0);
-  transition: all 0.8s ease-out;
+  transition: all 0.5s ease-out;
 }
 .menu .nav-item.show {
   transform: translate(0, 0);
@@ -93,7 +101,7 @@
   font-weight: 300;
   color: #fff;
   text-decoration: none;
-  transition: all 0.8s ease-out;
+  transition: all 0.5s ease-out;
 }
 .menu .nav-link:hover {
   color: #eece1a;
@@ -143,6 +151,10 @@ body#bg-img:after {
   z-index: -1;
 }
 
+div#home {
+  margin-top: 9rem;
+}
+
 h1, h2, h3 {
   margin: 0;
   font-weight: 400;
@@ -189,7 +201,7 @@ main .icons a {
 }
 main .icons a:hover {
   color: #eece1a;
-  transition: all 0.8s ease-out;
+  transition: all 0.5s ease-out;
 }
 
 .about-info {
@@ -235,7 +247,7 @@ main .icons a:hover {
 .projects img:hover {
   opacity: 0.5;
   border-color: #eece1a;
-  transition: all 0.8s ease-out;
+  transition: all 0.5s ease-out;
 }
 
 .boxes {
@@ -250,7 +262,7 @@ main .icons a:hover {
   border: 3px #fff solid;
   padding: 1.5rem 2.5rem;
   margin-bottom: 3rem;
-  transition: all 0.8s ease-out;
+  transition: all 0.5s ease-out;
 }
 .boxes div:hover {
   padding: 0.5rem 1.5rem;
@@ -266,7 +278,7 @@ main .icons a:hover {
   padding: 0.5rem 1rem;
   border: 0;
   margin-bottom: 0.3rem;
-  transition: all 0.8s ease-out;
+  transition: all 0.5s ease-out;
 }
 .btn:hover, .btn-light:hover, .btn-dark:hover {
   background: #eece1a;
@@ -322,20 +334,24 @@ main .icons a:hover {
   }
 
   .menu-nav {
-    height: 75vh;
+    height: 70vh;
     transform: translate(-100%, 0);
     font-size: 24px;
   }
 
   .menu-branding {
-    height: 25vh;
+    height: 30vh;
     transform: translate(100%, 0);
   }
 
   .menu-branding .portrait {
-    background: url("../img/portrait_small.jpg");
+    margin-top: 20px;
+  }
+
+  .menu-branding .portrait img {
     width: 150px;
-    height: 150px;
+    height: auto;
+    border-radius: 50%;
   }
 
   .about-info {

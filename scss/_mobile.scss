@@ -32,19 +32,22 @@
     }
 
     .menu-nav {
-        height: 75vh;
+        height: 70vh;
         transform: translate(-100%, 0);
         font-size: 24px;
     }
 
     .menu-branding {
-        height: 25vh;
+        height: 30vh;
         transform: translate(100%, 0);
 
         .portrait {
-            background: url('../img/portrait_small.jpg');
-            width: 150px;
-            height: 150px;
+            margin-top: 20px;
+            img {
+                width: 150px;
+                height: auto;
+                border-radius: 50%;
+            }
         }
     }
     .about-info {
