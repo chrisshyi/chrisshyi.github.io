@@ -1,0 +1,55 @@
+.projects-container {
+    .project-card {
+        margin-bottom: 30px;
+        font-size: 1rem;
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+        'project-img project-content project-content project-content';
+        column-gap: 10px;
+        padding: 0 4rem;
+
+        img {
+            width: 300px;
+            height: auto;
+            grid-area: project-img;
+        }
+
+        .project-content {
+            display: grid;
+            grid-area: project-content;
+            text-align: left;
+            grid-template-areas:
+            'project-title'
+            'project-desc'
+            'project-tech'
+            'project-links';
+
+            .project-skills {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                margin-bottom: 4vh;
+                font-size: 0.8rem;
+
+                .project-skill {
+                    display: inline-flex;
+                    align-items: center;
+                    border: 2px solid #92eac0;
+                    padding: 0.5px 5px;
+                    border-radius: 4px;
+                    margin-right: 1rem;
+                }
+            }
+
+            .project-links {
+                a.project-link {
+                    padding: 10px;
+                    border-radius: 5px;
+                    border: 2px solid #e6f2ff;
+                }
+            }
+        }
+    }
+}

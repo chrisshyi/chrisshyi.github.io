@@ -1,6 +1,7 @@
 @use "sass:meta";
 @use 'config';
 @use 'menu';
+@use 'projects';
 @use 'sass:color';
 * {
     box-sizing: border-box;
@@ -30,9 +31,14 @@
     }
 }
 
+.section-header {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
 body {
-    @include config.background;
-    background: #f6f9fc;
+    background: rgba(config.$primary-color, config.$background-opacity);
     color: config.set-text-color(config.$primary-color);
     height: 100%;
     margin: 0;
@@ -41,7 +47,7 @@ body {
 }
 
 div#home {
-    margin-top: 9rem;
+    margin-top: 3rem;
 }
 
 // Headings
