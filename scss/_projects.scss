@@ -8,11 +8,11 @@
         grid-template-areas:
         'project-img project-content project-content project-content';
         column-gap: 10px;
-        padding: 0 4rem;
 
         img {
             width: 300px;
             height: auto;
+            border-radius: 20px;
             grid-area: project-img;
         }
 

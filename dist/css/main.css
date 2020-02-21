@@ -131,11 +131,11 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas: "project-img project-content project-content project-content";
   column-gap: 10px;
-  padding: 0 4rem;
 }
 .projects-container .project-card img {
   width: 300px;
   height: auto;
+  border-radius: 20px;
   grid-area: project-img;
 }
 .projects-container .project-card .project-content {
@@ -206,6 +206,7 @@ body {
 
 div#home {
   margin-top: 3rem;
+  padding: 0 5rem;
 }
 
 h1, h2, h3 {
@@ -246,13 +247,17 @@ main#home {
 main#home h1 {
   margin-top: 20vh;
 }
-main .icons {
+main #contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   margin-top: 1rem;
 }
-main .icons a {
+main #contact a {
+  margin-right: 2rem;
   padding: 0.4rem;
 }
-main .icons a:hover {
+main #contact a:hover {
   color: #eece1a;
   transition: all 0.5s ease-out;
 }

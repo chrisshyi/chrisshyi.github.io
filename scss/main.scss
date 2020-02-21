@@ -48,6 +48,7 @@ body {
 
 div#home {
     margin-top: 3rem;
+    padding: 0 5rem;
 }
 
 // Headings
@@ -95,9 +96,13 @@ main {
         }
     }
 
-    .icons {
+    #contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
         margin-top: 1rem;
         a {
+            margin-right: 2rem;
             padding: 0.4rem;
             &:hover {
                 color: config.$secondary-color;
