@@ -13,6 +13,13 @@
 }
 
 @include config.mediaMd {
+    .navbar-container {
+        justify-content: center;
+
+        .navbar {
+            margin-right: 0;
+        }
+    }
     main {
         align-items: center;
         text-align: center;
