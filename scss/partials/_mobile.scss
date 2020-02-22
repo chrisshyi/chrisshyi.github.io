@@ -49,8 +49,11 @@
 }
 
 @include config.mediaSm {
-    main#home h1 {
-        margin-top: 10vh; 
+    div#home {
+        h1.lg-heading {
+            font-size: 5rem;
+            margin-top: 10vh; 
+        } 
     }
 
     .projects-container {
@@ -63,10 +66,68 @@
         }
     }
 }
-@include config.mediaSm {
+@include config.mediaXs {
+
+    .navbar-container {
+        justify-content: center;
+
+        .navbar {
+            justify-content: space-evenly;
+            margin-right: 0;
+        }
+    }
+
+    div#home {
+        padding: 0;
+
+        h1.lg-heading {
+            font-size: 4rem;
+        }
+
+        h2.sm-heading {
+            font-size: 0.8rem;
+        }
+    }
+
     .projects-container {
         .project-card {
-            
+            grid-template-columns: 1fr;
+            grid-template-areas:
+            'project-img'
+            'project-content';
+
+            div.project-content {
+                margin-top: 3vh;
+
+                p.project-desc {
+                    width: 100%;
+                    max-height: none;
+                }
+
+                div.project-skills {
+                    width: 100%;
+
+                    .project-skill {
+                        margin-top: 0.5rem;
+                    }
+                }
+
+                div.project-links {
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    .project-link {
+                        margin-top: 0.5rem;
+                        margin-right: 0.7rem;
+                        padding: 8px;
+                    }
+                }
+            }
+
+            img.project-img {
+                width: 100%;
+                height: auto;
+            }
         } 
     }
 }
