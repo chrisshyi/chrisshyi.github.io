@@ -1,3 +1,6 @@
+@use 'sass:color';
+@use 'config';
+
 .projects-container {
     .project-card {
         margin-bottom: 30px;
@@ -26,11 +29,17 @@
             'project-tech'
             'project-links';
 
+            p.project-desc {
+                max-height: 170px;
+                max-width: 490px;
+                font-size: 0.8rem;
+            }
+
             .project-skills {
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
-                margin-bottom: 4vh;
+                margin-bottom: 3vh;
                 font-size: 0.8rem;
 
                 .project-skill {
@@ -45,9 +54,19 @@
 
             .project-links {
                 a.project-link {
+                    font-size: 0.8rem;
                     padding: 10px;
                     border-radius: 5px;
-                    border: 2px solid #e6f2ff;
+                    border: 2px solid #7795f8;
+                    background-color: #7795f8;
+
+                    &:hover {
+                        $hover-color: color.scale(#7795f8, $lightness: -20%);
+                        background-color: $hover-color;
+                        border-color: $hover-color;
+                        @include config.easeOut;
+                    }
+
                 }
             }
         }
