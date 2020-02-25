@@ -85,8 +85,8 @@
                 max-width: 250px;
                 width: auto;
             }
-        @include project-skills();
-}
+            @include project-skills();
+        }
         }
     }
 
@@ -139,6 +139,7 @@
 
                     .project-skill {
                         margin-top: 0.5rem;
+                        margin-bottom: 0;
                     }
                 }
 

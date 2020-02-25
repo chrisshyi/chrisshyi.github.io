@@ -163,6 +163,7 @@
   padding: 0.5px 5px;
   border-radius: 4px;
   margin-right: 1rem;
+  margin-bottom: 10px;
 }
 .projects-container .project-card .project-content .project-links a.project-link {
   font-size: 0.8rem;
@@ -316,6 +317,7 @@
   }
   .projects-container .project-card div.project-content div.project-skills .project-skill {
     margin-top: 0.5rem;
+    margin-bottom: 0;
   }
   .projects-container .project-card div.project-content div.project-links {
     display: flex;
@@ -576,6 +578,7 @@ main #contact a:hover {
 
   .projects-container .project-card div.project-content div.project-skills .project-skill {
     margin-top: 0.5rem;
+    margin-bottom: 0;
   }
 
   .projects-container .project-card div.project-content div.project-links {
