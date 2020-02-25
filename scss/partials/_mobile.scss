@@ -1,13 +1,48 @@
 @use 'config';
 
+@mixin project-card {
+    .projects-container {
+        .project-card {
+            font-size: 0.7rem;
+            column-gap: 20px;
+            img {
+                max-width: 300px;
+                height: 240px;
+                width: auto;
+            } 
+            .project-content {
+                h3 {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
+
+@mixin project-skills {
+    .project-content {
+        .project-skills {
+            .project-skill {
+                line-height: 1;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
 @include config.mediaXL {
     div#home {
         padding: 0 12rem;
     }
+    @include project-card();
+    @include project-skills();
 }
 
 @include config.mediaLg {
+    @include project-card;
+    @include project-skills();
 }
+
 
 @include config.mediaMd {
     .navbar-container {
@@ -30,23 +65,10 @@
             margin-bottom: 1rem;
         }
     }
-    .projects-container {
-        .project-card {
-            font-size: 0.7rem;
-            column-gap: 20px;
-            img {
-                max-width: 300px;
-                height: 240px;
-                width: auto;
-            } 
-            .project-content {
-                h3 {
-                    font-size: 1.2rem;
-                }
-            }
-        }
-    }
+    @include project-card;
+    @include project-skills();
 }
+
 
 @include config.mediaSm {
     div#home {
@@ -63,9 +85,11 @@
                 max-width: 250px;
                 width: auto;
             }
+        @include project-skills();
+}
         }
     }
-}
+
 @include config.mediaXs {
 
     .navbar-container {
@@ -74,6 +98,12 @@
         .navbar {
             justify-content: space-evenly;
             margin-right: 0;
+
+            @media screen and (max-width: 400px) {
+                a {
+                    font-size: 1.1rem;
+                }
+            }
         }
     }
 

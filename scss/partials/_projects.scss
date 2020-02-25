@@ -59,6 +59,7 @@
                     border-radius: 5px;
                     border: 2px solid #7795f8;
                     background-color: #7795f8;
+                    margin-right: 10px;
 
                     &:hover {
                         $hover-color: color.scale(#7795f8, $lightness: -20%);

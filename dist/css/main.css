@@ -170,6 +170,7 @@
   border-radius: 5px;
   border: 2px solid #7795f8;
   background-color: #7795f8;
+  margin-right: 10px;
 }
 .projects-container .project-card .project-content .project-links a.project-link:hover {
   background-color: #315ff4;
@@ -177,6 +178,159 @@
   transition: all 0.5s ease-out;
 }
 
+@media screen and (min-width: 1300px) {
+  div#home {
+    padding: 0 12rem;
+  }
+
+  .projects-container .project-card {
+    font-size: 0.7rem;
+    column-gap: 20px;
+  }
+  .projects-container .project-card img {
+    max-width: 300px;
+    height: 240px;
+    width: auto;
+  }
+  .projects-container .project-card .project-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .project-content .project-skills .project-skill {
+    line-height: 1;
+    margin-top: 10px;
+  }
+}
+@media screen and (min-width: 909px) and (max-width: 1300px) {
+  .projects-container .project-card {
+    font-size: 0.7rem;
+    column-gap: 20px;
+  }
+  .projects-container .project-card img {
+    max-width: 300px;
+    height: 240px;
+    width: auto;
+  }
+  .projects-container .project-card .project-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .project-content .project-skills .project-skill {
+    line-height: 1;
+    margin-top: 10px;
+  }
+}
+@media screen and (min-width: 773px) and (max-width: 909px) {
+  .navbar-container {
+    justify-content: center;
+  }
+  .navbar-container .navbar {
+    margin-right: 0;
+  }
+
+  main {
+    align-items: center;
+    text-align: center;
+  }
+  main #home {
+    padding: 0 2rem;
+  }
+  main .lg-heading {
+    line-height: 1;
+    margin-bottom: 1rem;
+  }
+
+  .projects-container .project-card {
+    font-size: 0.7rem;
+    column-gap: 20px;
+  }
+  .projects-container .project-card img {
+    max-width: 300px;
+    height: 240px;
+    width: auto;
+  }
+  .projects-container .project-card .project-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .project-content .project-skills .project-skill {
+    line-height: 1;
+    margin-top: 10px;
+  }
+}
+@media screen and (min-width: 690px) and (max-width: 773px) {
+  div#home h1.lg-heading {
+    font-size: 5rem;
+    margin-top: 10vh;
+  }
+
+  .projects-container .project-card img {
+    height: 260px;
+    max-width: 250px;
+    width: auto;
+  }
+  .projects-container .project-card .project-content .project-skills .project-skill {
+    line-height: 1;
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 690px) {
+  .navbar-container {
+    justify-content: center;
+  }
+  .navbar-container .navbar {
+    justify-content: space-evenly;
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 690px) and (max-width: 400px) {
+  .navbar-container .navbar a {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 690px) {
+  div#home {
+    padding: 0;
+  }
+  div#home h1.lg-heading {
+    font-size: 4rem;
+  }
+  div#home h2.sm-heading {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 690px) {
+  .projects-container .project-card {
+    grid-template-columns: 1fr;
+    grid-template-areas: "project-img" "project-content";
+  }
+  .projects-container .project-card div.project-content {
+    margin-top: 3vh;
+  }
+  .projects-container .project-card div.project-content p.project-desc {
+    width: 100%;
+    max-height: none;
+  }
+  .projects-container .project-card div.project-content div.project-skills {
+    width: 100%;
+  }
+  .projects-container .project-card div.project-content div.project-skills .project-skill {
+    margin-top: 0.5rem;
+  }
+  .projects-container .project-card div.project-content div.project-links {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .projects-container .project-card div.project-content div.project-links .project-link {
+    margin-top: 0.5rem;
+    margin-right: 0.7rem;
+    padding: 8px;
+  }
+  .projects-container .project-card img.project-img {
+    width: 100%;
+    height: auto;
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -188,6 +342,7 @@
 .navbar-container .navbar {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   width: 286px;
   margin-top: 40px;
   margin-right: 40px;
@@ -270,6 +425,47 @@ main #contact a:hover {
   div#home {
     padding: 0 12rem;
   }
+
+  .projects-container .project-card {
+    font-size: 0.7rem;
+    column-gap: 20px;
+  }
+
+  .projects-container .project-card img {
+    max-width: 300px;
+    height: 240px;
+    width: auto;
+  }
+
+  .projects-container .project-card .project-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .project-content .project-skills .project-skill {
+    line-height: 1;
+    margin-top: 10px;
+  }
+}
+@media screen and (min-width: 909px) and (max-width: 1300px) {
+  .projects-container .project-card {
+    font-size: 0.7rem;
+    column-gap: 20px;
+  }
+
+  .projects-container .project-card img {
+    max-width: 300px;
+    height: 240px;
+    width: auto;
+  }
+
+  .projects-container .project-card .project-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .project-content .project-skills .project-skill {
+    line-height: 1;
+    margin-top: 10px;
+  }
 }
 @media screen and (min-width: 773px) and (max-width: 909px) {
   .navbar-container {
@@ -308,6 +504,11 @@ main #contact a:hover {
   .projects-container .project-card .project-content h3 {
     font-size: 1.2rem;
   }
+
+  .project-content .project-skills .project-skill {
+    line-height: 1;
+    margin-top: 10px;
+  }
 }
 @media screen and (min-width: 690px) and (max-width: 773px) {
   div#home h1.lg-heading {
@@ -320,6 +521,11 @@ main #contact a:hover {
     max-width: 250px;
     width: auto;
   }
+
+  .projects-container .project-card .project-content .project-skills .project-skill {
+    line-height: 1;
+    margin-top: 10px;
+  }
 }
 @media screen and (max-width: 690px) {
   .navbar-container {
@@ -330,7 +536,13 @@ main #contact a:hover {
     justify-content: space-evenly;
     margin-right: 0;
   }
-
+}
+@media screen and (max-width: 690px) and (max-width: 400px) {
+  .navbar-container .navbar a {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 690px) {
   div#home {
     padding: 0;
   }
@@ -342,7 +554,8 @@ main #contact a:hover {
   div#home h2.sm-heading {
     font-size: 0.8rem;
   }
-
+}
+@media screen and (max-width: 690px) {
   .projects-container .project-card {
     grid-template-columns: 1fr;
     grid-template-areas: "project-img" "project-content";
